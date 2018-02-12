@@ -12,9 +12,9 @@ public class Lab1Activity {
 			if (arr[i] > maxResult)
 				maxResult = arr[i];
 		int minResult = arr[0];
-		for(int i=1; i<arr.length; ++i)
+		for(int i=1; i<arr.length; ++i) {
 			if (arr[i] < minResult)
-				minResult = arr[i];
+				minResult = arr[i];}
 		System.out.println("Min = " + minResult + "; Max = " + maxResult);
 	}
 }
