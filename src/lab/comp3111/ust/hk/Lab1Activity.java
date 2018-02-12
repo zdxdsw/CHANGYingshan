@@ -7,5 +7,14 @@ public class Lab1Activity {
 		for (int i : arr)
 			sum += i;
 		System.out.println(String.format("Sum of the numbers is %d", sum));
+		int maxResult = arr[0];
+		for(int i=1; i<arr.length; ++i)
+			if (arr[i] > maxResult)
+				maxResult = arr[i];
+		int minResult = arr[0];
+		for(int i=1; i<arr.length; ++i)
+			if (arr[i] < minResult)
+				minResult = arr[i];
+		System.out.println("Min = " + minResult + "; Max = " + maxResult);
 	}
 }
